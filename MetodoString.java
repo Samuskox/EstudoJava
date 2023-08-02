@@ -1,6 +1,6 @@
 public class MetodoString {
     public static void main(String[] args){
-        String comida = "           oi preciso  de espaço   afaste-se de mim";
+        String comida = " oi preciso  de espaço   afaste-se de mim";
 
         //boolean ecomidaouN = comida.equalsIgnoreCase(" ");
         //System.out.println(ecomidaouN);
@@ -8,8 +8,8 @@ public class MetodoString {
         //int tamanho = comida.length();
         //System.out.println(tamanho);
 
-        //char letrinha = comida.charAt(2);
-        //System.out.println(letrinha);
+        char letrinha = comida.charAt(2);
+        System.out.println(letrinha);
 
         //int posicao = comida.indexOf("E");
         //System.out.println(posicao);
@@ -23,8 +23,8 @@ public class MetodoString {
         //System.out.println(comida);
         //System.out.print(semEspaco);
 
-        String oi = comida.replace('e','l');
-        System.out.println(oi);
+        //String oi = comida.replace('e','l');
+        //System.out.println(oi);
 
     }
 }
