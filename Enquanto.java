@@ -16,6 +16,6 @@ public class Enquanto {
 
         System.out.println("que cringe, tipo assim seu nome é "+nome);
 
-
+        scanner.close();
     }
 }

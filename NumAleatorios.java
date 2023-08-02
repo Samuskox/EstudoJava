@@ -5,8 +5,9 @@ public class NumAleatorios {
         Random random = new Random();
 
         //int x = random.nextInt(7);
-        double y = random.nextDouble(5);
+        //double y = random.nextDouble(5);
         boolean z = random.nextBoolean();
         System.out.println(z);
+
     }
 }

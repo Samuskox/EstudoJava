@@ -15,6 +15,8 @@ public class input {
         System.out.println("\tQual seu jogo favorito?");
         String jogo = Scanner.nextLine();
         System.out.println("O jogo favorito do(a) "+nome+rosa+" é " +jogo+ "");
+
+        Scanner.close();
         
     }
 }
