@@ -3,12 +3,20 @@ package GEMSUNIVERSE;
 public class Gems {
     String Pedra;
     String Color;
+    Integer idade;
+    int Hierarquia;
 
-    void fusao(String pedra){
-        System.out.println("Essa "+pedra+" se fundiu com uma gem");
+    void fusao(){
+        System.out.println("Essa "+this.Pedra+" se fundiu com uma gem");
     }
 
-    void poder(String pedra){
-        System.out.println("Essa "+pedra+" utilizou a arma dela");
+    void poder(){
+        System.out.println("Essa "+this.Pedra+" utilizou a arma dela");
+    }
+
+    Gems(String Pedra, String Color, Integer idade){
+        this.Pedra = Pedra;
+        this.Color = Color;
+        this.idade = idade;
     }
 }

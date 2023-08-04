@@ -1,4 +1,4 @@
-import java.util.Locale;
+
 import java.util.Random;
 
 import javax.swing.JOptionPane;
