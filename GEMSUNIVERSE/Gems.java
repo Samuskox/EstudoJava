@@ -4,7 +4,6 @@ public class Gems {
     String Pedra;
     String Color;
     Integer idade;
-    int Hierarquia;
 
     void fusao(){
         System.out.println("Essa "+this.Pedra+" se fundiu com uma gem");
@@ -18,5 +17,10 @@ public class Gems {
         this.Pedra = Pedra;
         this.Color = Color;
         this.idade = idade;
+    }
+
+    public String toString(){
+        String myString = Pedra+"\n"+Color+"\n"+idade;
+        return myString;
     }
 }
