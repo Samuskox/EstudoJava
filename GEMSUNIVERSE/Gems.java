@@ -5,8 +5,8 @@ public class Gems {
     String Color;
     Integer idade;
 
-    void fusao(){
-        System.out.println("Essa "+this.Pedra+" se fundiu com uma gem");
+    void fusao(Gems pedra2){
+        System.out.println("Essa "+this.Pedra+" se fundiu com a "+pedra2.Pedra);
     }
 
     void poder(){

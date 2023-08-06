@@ -17,10 +17,10 @@ public class Objetos {
 
         //System.out.println(perola);
 
-        perola.fusao();
+        perola.fusao(Diamante);
         //perola.poder();
 
-        Diamante.fusao();
+        Diamante.fusao(Ruby);
         //Diamante.poder();
     }
 }
