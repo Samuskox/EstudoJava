@@ -6,6 +6,13 @@ public class Objetos {
         Gems perola = new Gems("Pérola", "Branca", 500);
         Gems Diamante = new Gems("Diamante", "Rosa", 100000);
         Gems Ruby = new Gems("Ruby", "Vermelho", 2500);
+        Gems Safira = new Gems("Safira", "Azul", 3000);
+
+        Humanos humano1 = new Humanos("Steven", 14);
+
+        humano1.Pique(Safira, Ruby);
+
+
         HomeWorld homeWorld = new HomeWorld();
 
 
@@ -22,6 +29,8 @@ public class Objetos {
 
         Diamante.fusao(Ruby);
         //Diamante.poder();
+
+        Ruby.fusao(Safira);
     }
 }
 
