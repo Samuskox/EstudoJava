@@ -14,7 +14,7 @@ public class Objetos {
 
 
         HomeWorld homeWorld = new HomeWorld();
-
+        System.out.println(perola.toString());
 
        // perola.Color = "White";
         //perola.Pedra = "Pérola";
