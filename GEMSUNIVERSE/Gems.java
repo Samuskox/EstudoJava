@@ -6,7 +6,12 @@ public class Gems {
     Integer idade;
 
     void fusao(Gems pedra2){
-        System.out.println("Essa "+this.Pedra+" se fundiu com a "+pedra2.Pedra);
+        if((this.Pedra == "Ruby") && (pedra2.Pedra == "Safira")){
+            System.out.println("Essa "+this.Pedra+" se fundiu com a "+pedra2.Pedra+" e formou a Garnet");
+        } else {
+            System.out.println("Essa "+this.Pedra+" se fundiu com a "+pedra2.Pedra);
+        }
+        
     }
 
     void poder(){
