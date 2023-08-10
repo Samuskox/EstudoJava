@@ -1,4 +1,4 @@
-package EHMAIORKRL;
+package BeeCrowd;
 
 import java.util.Scanner;
 import java.lang.Math;
