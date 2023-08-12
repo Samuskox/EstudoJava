@@ -87,6 +87,8 @@ public class ReaisMoney {
             moeda1++;
         }
 
+        System.out.println(Total);
+
         System.out.println("NOTAS:");
         System.out.println(real100+" nota(s) de R$ 100.00");
         System.out.println(real50+" nota(s) de R$ 50.00");
