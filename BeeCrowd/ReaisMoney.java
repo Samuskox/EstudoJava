@@ -1,5 +1,6 @@
 package BeeCrowd;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class ReaisMoney {
@@ -8,7 +9,10 @@ public class ReaisMoney {
         double a = x.nextDouble();
         x.close();
 
-        double Total = a;
+        int Notas = (int)a;
+        int Moedas = -(int)((Notas - a)*100);
+
+        //double Total = a;
 
         int real100 = 0;
         int real50 = 0;
@@ -22,72 +26,71 @@ public class ReaisMoney {
         int moeda10 = 0;
         int moeda5 = 0;
         int moeda1 = 0;
+        
+        System.out.println(Notas);
+        System.out.println(Moedas);
 
 
 
-        while(Total >= 100){
-            Total -= 100;
+        while(Notas >= 100){
+            Notas -= 100;
             real100++;
         }
 
-        while(Total >= 50){
-            Total -= 50;
+        while(Notas >= 50){
+            Notas -= 50;
             real50++;
         }
 
-        while(Total >= 20){
-            Total -= 20;
+        while(Notas >= 20){
+            Notas -= 20;
             real20++;
         }
 
-        while(Total >= 10){
-            Total -= 10;
+        while(Notas >= 10){
+            Notas -= 10;
             real10++;
         }
 
-        while(Total >= 5){
-            Total -= 5;
+        while(Notas >= 5){
+            Notas -= 5;
             real5++;
         }
 
-        while(Total >= 2){
-            Total -= 2;
+        while(Notas >= 2){
+            Notas -= 2;
             real2++;
         }
 
-        while(Total >= 1){
-            Total -= 1;
+        while(Notas >= 1){
+            Notas -= 1;
             real1++;
         }
 
-        while(Total >= 0.50){
-            Total -= 0.50;
+        while(Moedas >= 50){
+            Moedas -= 50;
             moeda50++;
         }
 
-        while(Total >= 0.25){
-            Total -= 0.25;
+        while(Moedas >= 25){
+            Moedas -= 25;
             moeda25++;
         }
 
-         while(Total >= 0.10){
-            Total -= 0.10;
+         while(Moedas >= 10){
+            Moedas -= 10;
             moeda10++;
         }
 
-         while(Total >= 0.05){
-            Total -= 0.05;
+         while(Moedas >= 5){
+            Moedas -= 5;
             moeda5++;
         }
 
-        System.out.println(Total);
-
-         while(Total >= 0.01){
-            Total -= 0.01;
+         while(Moedas >= 1){
+            Moedas -= 1;
             moeda1++;
         }
-
-        System.out.println(Total);
 
         System.out.println("NOTAS:");
         System.out.println(real100+" nota(s) de R$ 100.00");
