@@ -6,12 +6,12 @@ public class Bhaskara {
         public static void main(String[]args){
         Scanner x = new Scanner(System.in);
 
-        float a = x.nextFloat();
-        float b = x.nextFloat();
-        float c = x.nextFloat();
+        double a = x.nextDouble();
+        double b = x.nextDouble();
+        double c = x.nextDouble();
 
         double R1 = 0;
-            double R2 = 0;
+        double R2 = 0;
 
         double delta = ((b*b)-4*a*c);
 
