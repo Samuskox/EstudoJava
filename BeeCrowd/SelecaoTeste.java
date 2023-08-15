@@ -11,15 +11,27 @@ public class SelecaoTeste{
         int C = x.nextInt();
         int D = x.nextInt();
 
+        int verificacao = 0;
+
+
+
+
         if(B > C && D > A){
-            if(C+D > A+B){
-                if(C > 0 && D > 0){
-                    if(A % 2 == 0){
-                        System.out.println("Valores aceitos"); 
-                    }
-                }
-            }
-        } else {
+            verificacao++;
+        } 
+        if(C+D > A+B){
+            verificacao++;
+        }
+
+        if(C > 0 && D > 0){
+            verificacao++;
+        }
+        if(A % 2 == 0){
+            verificacao++;
+        }
+        if(verificacao == 4){
+            System.out.println("Valores aceitos"); 
+        }else {
             System.out.println("Valores nao aceitos");
         }
     }
